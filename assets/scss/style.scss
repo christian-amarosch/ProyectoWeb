@@ -1,0 +1,281 @@
+$primary-color-background: #eef0f8;
+$secondary-color-background: #30475e;
+
+* {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+}
+
+nav {
+
+     .logo {
+          flex: 1;
+          margin-left: 20px;
+          font-family: 'Potta One',
+               cursive;
+          color: white;
+
+     }
+
+     .nav-link {
+
+          color: black;
+          font-size: 18px;
+          font-family: 'Montserrat',
+               sans-serif;
+          color: white;
+          text-decoration: none;
+
+
+
+     }
+
+}
+
+main {
+     .producto {
+          display: flex;
+          width: 100%;
+          margin: auto;
+          background-color: $primary-color-background;
+          min-height: 85vh;
+          align-items: center;
+          overflow: hidden;
+          padding-bottom: 30px;
+     }
+
+     .oculto {
+          margin-top: 50px;
+          display: none;
+     }
+
+     .introduccion {
+          flex: 1;
+          padding-right: 20px;
+     }
+
+     .imagen-producto {
+          padding-left: 120px;
+     }
+
+     .intro-texto h1 {
+          font-size: 40px;
+          font-weight: 500;
+          font-family: 'Lato',
+               sans-serif;
+
+     }
+
+     .intro-texto p {
+          font-size: 15px;
+          margin-top: 5px;
+          font-family: 'Lato',
+               sans-serif;
+     }
+
+     .botones {
+          padding-top: 50px;
+     }
+
+     .saber-mas {
+          border: 2px solid rgb(88, 88, 88);
+          width: 150px;
+          height: 50px;
+          background: transparent;
+          font-size: 15px;
+          font-family: 'Lato',
+               sans-serif;
+          cursor: pointer;
+
+     }
+
+     .saber-mas:hover {
+          transform: scale(1.05);
+          transition: all 2s;
+          background: rgb(88, 88, 88);
+          color: white;
+     }
+
+
+
+     .agregar-carrito {
+          border: none;
+          width: 150px;
+          height: 50px;
+          background: rgb(88, 88, 88);
+          cursor: pointer;
+          font-size: 15px;
+          color: white;
+          margin-left: 5px;
+          font-family: 'Lato',
+               sans-serif;
+     }
+
+     .agregar-carrito:hover {
+          transform: scale(1.05);
+          transition: all 2s;
+          background: transparent;
+          color: black;
+          border: 2px solid rgb(88, 88, 88);
+     }
+
+     .imagen-producto {
+          flex: 1;
+          height: 100%;
+          width: 50%;
+     }
+
+     .imagen-producto img {
+          height: 500px;
+          width: auto;
+     }
+
+     .imgxboxx img {
+          height: 400px;
+          width: auto;
+          padding-right: 100px
+     }
+
+     .especificaciones {
+          display: flex;
+          margin-top: 50px;
+          background: transparent;
+          justify-content: space-between;
+          height: 55px;
+     }
+
+     .especificaciones,
+     h1 {
+
+          font-family: 'Lato',
+               sans-serif;
+     }
+
+     .lista-especificaciones {
+          margin-left: 10px;
+          list-style: none;
+          background: transparent;
+          height: 20px;
+          overflow: hidden;
+          margin-top: 8px;
+     }
+
+     .linea {
+          line-height: 20px;
+          font-family: 'Montserrat',
+               sans-serif;
+          color: #222831;
+
+     }
+
+     .linea:first-child {
+          animation: animacion 12s infinite;
+     }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+     background-color: $secondary-color-background;
+     min-height: 55px;
+     color: white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.fab {
+     font-size: 30px;
+     margin: 0px 20px 0 20px;
+}
+
+@media screen and (max-width: 1367px) {
+     .especificaciones {
+          display: none;
+     }
+}
+
+@media screen and (max-width: 1024px) {
+     .producto {
+          flex-direction: column;
+     }
+
+     .introduccion {
+          margin-top: 5vh;
+          text-align: center;
+     }
+
+     .intro-texto h1 {
+
+          font-size: 30px;
+
+
+     }
+
+     .intro-texto p {
+
+          margin-top: 15px;
+
+
+          font-size: 12px;
+
+
+     }
+
+     .botones {
+          padding: 20px 0 20px 0;
+     }
+
+     .imagen-producto {
+          display: flex;
+          justify-content: center;
+     }
+
+     .imgxboxx {
+          margin-top: 20px;
+          margin-left: 70px;
+
+     }
+}
+
+@keyframes animacion {
+     0% {
+          margin-top: 0;
+     }
+
+     16% {
+          margin-top: -20px;
+     }
+
+     33% {
+          margin-top: -40px;
+     }
+
+     50% {
+          margin-top: -60px;
+     }
+
+     66% {
+          margin-top: -40px;
+     }
+
+     82% {
+          margin-top: -20px;
+     }
+
+     100% {
+          margin-top: 0;
+     }
+}
